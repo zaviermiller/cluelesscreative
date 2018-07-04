@@ -1,0 +1,464 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Setup */
+
+body,html {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans_500_italic-webfont.woff2') format('woff2'),
+         font-url('museosans_500_italic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans_500-webfont.woff2') format('woff2'),
+         font-url('museosans_500-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans_700-webfont.woff2') format('woff2'),
+         font-url('museosans_700-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans_900-webfont.woff2') format('woff2'),
+         font-url('museosans_900-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans-100-webfont.woff2') format('woff2'),
+         font-url('museosans-100-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans-100italic-webfont.woff2') format('woff2'),
+         font-url('museosans-100italic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans-300-webfont.woff2') format('woff2'),
+         font-url('museosans-300-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans-300italic-webfont.woff2') format('woff2'),
+         font-url('museosans-300italic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans-700italic-webfont.woff2') format('woff2'),
+         font-url('museosans-700italic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Museo';
+    src: font-url('museosans-900italic-webfont.woff2') format('woff2'),
+         font-url('museosans-900italic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+/* Page 1 */
+
+.page1 {
+	background: url('mainbg.png');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.navbar {
+	width: 100%;
+	position: fixed;
+	margin-top: 20px;
+		font-family: 'Museo', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #60513E;
+}
+
+.navbar img {
+	width: 150px;
+	height: 51.9230769231px;
+	position: relative;
+	margin-left: 45px;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.nav {
+	margin-right: 32px;
+	float: right;
+	list-style: none;
+}
+
+.navbar li {
+	display: inline;
+	margin-right: 18px;
+	transition: .2s;
+	letter-spacing: 2.5px;
+}
+
+.dark {
+	color: #60513E;
+}
+
+.dark li:hover {
+	color: #F4D19D;
+}
+
+.active {
+	color: #F4D19D;
+}
+
+.welcome {
+	text-align: center;
+	color: #F4D19D;
+	font-size: 3em;
+	font-family: 'Museo', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	position: relative;
+	top: 240px;
+}
+
+.button {
+	font-weight: 500;
+	font-family: 'Museo', sans-serif;
+	border: 2.45px solid #F4D19D;
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	color: #F4D19D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+	cursor: pointer;
+	position: relative;
+	font-size: 1.1em;
+}
+
+.button:hover {
+	background-color: #F4D19D;
+	color:#151516;
+	font-weight: 700;
+}
+
+.mainbtn {
+	height: 40px;
+	width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	top: 220px;
+}
+
+.dots {
+	font-size: 20px;
+	text-align: right;
+	position: fixed;
+	top: 280px;
+	right: 20px;
+}
+
+.dots p {
+	display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-bottom: -5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.dots p:hover {
+	color: #F4D19D
+}
+
+.fa-angle-down {
+	color: #60513E;
+	cursor: pointer;
+	position: absolute;
+	bottom: 15px;
+	transform: scale(1.7,1);
+	transition: .2s;
+}
+
+.down {
+	text-align: center;
+}
+.fa-angle-down:hover {
+	color: #F4D19D;
+}
+
+/* Page 2 */
+
+.page2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	z-index: -1;
+	background-color: #fff;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item { width: 200px;
+	background-color: #000;
+	margin-right: 10px;
+	margin-bottom: 10px;
+ }
+
+.headingyellow {
+	text-transform: uppercase;
+	color: #F4D19D;
+	text-align: center;
+	margin-top: 120px;
+	font-family: 'Museo', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.light .active {
+	color: #F4D19D;
+}
+
+.light li:hover {
+	color: #F4D19D;
+}
+.light p:hover {
+	color: #F4D19D;
+}
+
+.light {
+	color: #ccc;
+}
+
+
+/* Page 3 */
+
+.page3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 200%;
+	z-index: -1;
+	background-color: #F4D19D;
+}
+
+.bgp {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.headingblack {
+	text-transform: uppercase;
+	color: #151516;
+	text-align: center;
+	margin-top: 120px;
+	font-family: 'Museo', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.paragraphblack {
+	font-family: 'Museo', sans-serif;
+	font-weight: 300;
+	text-align:center;
+	font-size: 25px;
+	margin-right: 30%;
+	margin-left: 30%;
+}
+
+.yellow {
+	color: #fff;
+}
+
+.yellow .active {
+	color: #151516;
+}
+
+.yellow li:hover {
+	color: #151516;
+}
+.yellow p:hover {
+	color: #151516;
+}
+
+/* Page 4 */
+
+.page4 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 300%;
+	z-index: -1;
+	background-color: #f2f2f2;
+}
+
+.page4 .headingyellow {
+	margin-top: 30px;
+}
+
+.page4 .paragraphblack {
+	font-size: 30px;
+	margin-right: 26%;
+	margin-left: 26%;
+}
+
+.parent {
+	margin-left: -300px;
+	position: relative;
+	left: 50%;
+	width: 650px;
+}
+
+.column {
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.listgray {
+	font-family: 'Museo',sans-serif;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #bbb;
+	font-size: 22px;
+	text-transform: uppercase;
+	line-height: 35px;
+}
+
+.contact {
+	font-weight: 400;
+	font-family: 'Museo', sans-serif;
+	border: 2.45px solid #F4D19D;
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #F4D19D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: .3s;
+	cursor: pointer;
+	position: relative;
+	font-size: 1.1em;
+	width: 190px;
+	margin-left: -95px;
+	left: 50%;
+	height: 38px;
+}
+.contact:hover {
+	background-color: #F4D19D;
+	color: #151516;
+}
+
+.footer {
+	width: 100%;
+	height: 70px;
+	color: #ddd;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+	font-family: 'Museo', sans-serif;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+
+/*
+-- COLORS --
+F4D19D GOLD
+151516 BLACK
+60513E SHADOW GOLD
+CCCCCC SHADOW GRAY
+*SUBJECT TO CHANGE
+*/
